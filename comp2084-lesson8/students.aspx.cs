@@ -13,18 +13,8 @@ namespace comp2084_lesson8
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            try
-            {
-                GetStudents();
-            }
-            catch (FileNotFoundException)
-            {
-                Server.Transfer("404.aspx", true);
-            }
-            catch (System.IO.IOException)
-            {
-                Server.Transfer("error.aspx", true);
-            }
+          
+            GetStudents();
 
         }
 
